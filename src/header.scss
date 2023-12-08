@@ -1,0 +1,42 @@
+$headerBg: grey; 
+$primaryColor: rgba(255, 166, 0, 0.849);
+$secondaryColor: #ffffff;
+$bgColor: black;
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-container{
+    background-color: $headerBg;
+    position: fixed;
+    width: 100%;
+
+    .header{
+       display: flex;
+       justify-content: space-between;
+       margin: 0 4rem;
+       padding: 1rem 0;
+
+       .logo{
+        color: $primaryColor;
+       }
+
+       .nav-list{
+           display: flex;
+           list-style-type: none;
+       
+           a{
+               color: $secondaryColor;
+               text-decoration: none;
+               padding: 2rem;
+               font-size: 25px;
+           }
+       }
+    }
+
+}

@@ -1,0 +1,42 @@
+@use 'header';
+
+.search-container{
+    background-color: header.$bgColor;
+    text-align: center;
+    width: 80%;
+    height: 50vh;
+    margin: 5rem auto;
+    padding: 3rem;
+    border-radius: 3rem;
+
+    .title{
+        font-size: 30px;
+    }
+
+    form{
+        margin-top: 4rem;
+
+        .input-box{
+            width: 70%;
+            font-size: 20px;
+            padding: 1rem;
+            border-top-left-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+        }
+
+        .btn{
+            font-size: 20px;
+            padding: 1rem;
+            border-bottom-right-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+    }
+
+    .terms{
+        margin-top: 3rem;
+        font-size: 20px;
+        span{
+            color: green;
+        }
+    }
+}

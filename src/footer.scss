@@ -1,0 +1,28 @@
+@use 'header';
+
+
+.footer-container{
+    background-color: header.$headerBg;
+    
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 4rem;
+        padding: 1rem 0;
+
+        .logo{
+            color: header.$primaryColor;
+        }
+
+        .copyright{
+            font-size:20px;
+        }
+
+        a{
+            color: header.$primaryColor;
+            text-decoration: none;
+            font-size: 25px;
+        }
+    }
+}
+
