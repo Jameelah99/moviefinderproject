@@ -11,7 +11,7 @@ function Footer() {
         <div className='footer'>
            <h2 className='logo'> <FontAwesomeIcon icon={faVideo} />  FindYourMovie</h2>
 
-           <p className='copyright'> Copyright 2023. Rotimi Jemilat. All rights reserved.</p>
+           <p className='copyright'> Copyright 2023 - Rotimi Jemilat. All rights reserved.</p>
 
            <a href=""> <FontAwesomeIcon icon={faGithub} /></a>
         </div> 

@@ -4,7 +4,7 @@
     background-color: header.$bgColor;
     text-align: center;
     width: 80%;
-    height: 50vh;
+    max-height: 100%;
     margin: 5rem auto;
     padding: 3rem;
     border-radius: 3rem;
@@ -29,6 +29,34 @@
             padding: 1rem;
             border-bottom-right-radius: 1rem;
             border-top-right-radius: 1rem;
+        }
+    }
+    //    loader style
+    .loading-indicator{
+        font-size: 18px;
+        color: header.$primaryColor;
+        margin-bottom: 15px;
+    }
+
+    // search result table style
+    ul{
+        list-style-type: none;
+        padding: 0;
+        width: 70%;
+        margin: auto;
+
+        li{
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            padding: 10px;
+
+            strong{
+                font-size: 18px;
+            }
+
+            span{
+                font-size: 14px;
+            }
         }
     }
 
