@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import searchpic from './assets/Search Pic.webp';
 import './heading.scss';
 

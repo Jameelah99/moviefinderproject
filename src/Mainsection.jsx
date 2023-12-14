@@ -57,15 +57,31 @@ function Mainsection() {
 
         {isLoading && <p className='loading-indicator'>Loading...</p> }
 
-        <ul>
+        {!isLoading && searchResult.length > 0 && (
+        <table className='search-table'>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Year</th>
+              <th>Type</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+
+          <tbody>
           {searchResult.map((movie) => (
-            <li key={movie.imdbID}>
-              <strong>{movie.Title}</strong> ({movie.Year}) <br />
-              <span>Type: {movie.Type} </span> <br />
-              <span>Details: {movie.Plot}</span> <br />
-            </li>
+            <tr key={movie.imdbID}>
+              <td>{movie.Title}</td>
+              <td>{movie.Year}</td>
+              <td>{movie.Type}</td>
+              <td>{movie.Plot}</td>
+            </tr>
           ))}
-        </ul>
+          </tbody>
+        </table>
+        )}
+
+        {isLoading && searchResult.length === 0 && <p>No results found.</p>}
 
         <p className='terms'>By using our service you are accepting our <span>terms of service.</span></p>
     </section>
