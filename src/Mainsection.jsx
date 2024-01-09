@@ -8,6 +8,7 @@ function Mainsection() {
   const [searchTerm, setSearchTerm] = useState('');
   const [searchResult, setSearchResult] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [searchStatus, setSearchStatus] = useState()
 
   const handleChange = (event) => {
     setSearchTerm(event.target.value);
@@ -28,7 +29,7 @@ function Mainsection() {
           return detailsResponse.data;
         })
       );
-
+      setSearchStatus(response.status)
       setSearchResult(movieDetails);
 
 
@@ -55,9 +56,8 @@ function Mainsection() {
           <button type="submit" className='btn'><FontAwesomeIcon icon={faSearchengin}/></button>
         </form>
 
-        {isLoading && <p className='loading-indicator'>Loading...</p> }
-
-        {!isLoading && searchResult.length > 0 && (
+        {isLoading ? <p className='loading-indicator'>Loading...</p> :  
+         searchResult.length  > 0 ? (
         <table className='search-table'>
           <thead>
             <tr>
@@ -76,12 +76,14 @@ function Mainsection() {
               <td>{movie.Type}</td>
               <td>{movie.Plot}</td>
             </tr>
-          ))}
+          )) }
           </tbody>
         </table>
-        )}
+        ) : searchStatus === 200 && searchResult.length <= 0 ? <p>No results found.</p> : null 
+      }
+        
 
-        {isLoading && searchResult.length === 0 && <p>No results found.</p>}
+
 
         <p className='terms'>By using our service you are accepting our <span>terms of service.</span></p>
     </section>
