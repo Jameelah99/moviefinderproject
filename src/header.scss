@@ -26,6 +26,10 @@ $bgColor: black;
         color: $primaryColor;
        }
 
+       .menu-icon{
+        display: none;
+       }
+
        .nav-list{
            display: flex;
            list-style-type: none;
@@ -39,4 +43,58 @@ $bgColor: black;
        }
     }
 
+}
+
+@media only screen and (max-width:480px) {
+    .header-container{
+        background-color: $headerBg;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+    
+        .header{
+           display: flex;
+           justify-content: space-between;
+           margin-right:4rem;
+
+    
+           .logo{
+            color: $primaryColor;
+            font-size: 13px;
+           }
+    
+           .menu-icon{
+            display: block;
+            margin-left: 9rem;
+           }
+    
+           .nav-list{
+               display: none;
+               list-style-type: none;
+           
+               a{
+                   color: $secondaryColor;
+                   text-decoration: none;
+                   padding: 0.5rem;
+                   font-size: 15px;
+               }
+
+               #github{
+                display: none;
+               }
+           }
+
+           .open ul{
+            display: block;
+            position: absolute;
+            top: 3rem;
+            right: -1px;
+            padding: 1rem 3rem;
+            font-size: 30px;
+            background-color: $headerBg;
+           }
+        }
+    
+    }
+    
 }

@@ -26,3 +26,32 @@
     }
 }
 
+@media screen and (max-width:480px){
+    .footer-container{
+        background-color: header.$headerBg;
+        
+        .footer{
+            display: flex;
+            justify-content: space-between;
+            margin: 0 3rem;
+            padding: .5rem 0;
+    
+            .logo{
+                color: header.$primaryColor;
+                font-size: 12px;
+            }
+    
+            .copyright{
+                font-size:12px;
+            }
+    
+            a{
+                color: header.$primaryColor;
+                text-decoration: none;
+                font-size: 12px;
+            }
+        }
+    }
+    
+}
+
