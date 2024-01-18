@@ -33,16 +33,16 @@
         .footer{
             display: flex;
             justify-content: space-between;
-            margin: 0 3rem;
+            margin: 0 2rem;
             padding: .5rem 0;
     
             .logo{
                 color: header.$primaryColor;
-                font-size: 12px;
+                font-size: 10px;
             }
     
             .copyright{
-                font-size:12px;
+                font-size:10px;
             }
     
             a{

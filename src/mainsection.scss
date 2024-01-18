@@ -89,18 +89,17 @@
         }
     
         form{
-            margin-top: 4rem;
     
             .input-box{
                 width: 75%;
                 font-size: 15px;
-                padding: 1rem;
+                padding: 1.1rem;
                 border-top-left-radius: 1rem;
                 border-bottom-left-radius: 1rem;
             }
     
             .btn{
-                font-size: 15px;
+                font-size: 13px;
                 padding: 1rem;
                 border-bottom-right-radius: 1rem;
                 border-top-right-radius: 1rem;
@@ -108,9 +107,9 @@
         }
         //    loader style
         .loading-indicator{
-            font-size: 15px;
+            font-size: 20px;
             color: header.$primaryColor;
-            margin-bottom: 15px;
+            margin: 15px 0;
         }
     
         // search result table style

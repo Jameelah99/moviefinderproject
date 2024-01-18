@@ -55,17 +55,17 @@ $bgColor: black;
         .header{
            display: flex;
            justify-content: space-between;
-           margin-right:4rem;
+           margin:0 2rem;
 
     
            .logo{
             color: $primaryColor;
-            font-size: 13px;
+            font-size: 17px;
            }
     
            .menu-icon{
             display: block;
-            margin-left: 9rem;
+            margin-left:13rem;
            }
     
            .nav-list{
@@ -88,7 +88,7 @@ $bgColor: black;
             display: block;
             position: absolute;
             top: 3rem;
-            right: -1px;
+            right: 1px;
             padding: 1rem 3rem;
             font-size: 30px;
             background-color: $headerBg;

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faSearchengin} from '@fortawesome/free-brands-svg-icons';
+import {faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons';
+import {faSpinner} from '@fortawesome/free-solid-svg-icons';
 import './mainsection.scss';
 
 function Mainsection() {
@@ -53,10 +54,10 @@ function Mainsection() {
               value={searchTerm}
               onChange={handleChange}
             />
-          <button type="submit" className='btn'><FontAwesomeIcon icon={faSearchengin}/></button>
+          <button type="submit" className='btn'><FontAwesomeIcon icon={faMagnifyingGlass} size='xl'/></button>
         </form>
 
-        {isLoading ? <p className='loading-indicator'>Loading...</p> :  
+        {isLoading ? <p className='loading-indicator'><FontAwesomeIcon icon={faSpinner} /></p> :  
          searchResult.length  > 0 ? (
         <table className='search-table'>
           <thead>

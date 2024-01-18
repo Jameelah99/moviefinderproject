@@ -20,10 +20,10 @@ function Header() {
     <>
     <section className='header-container'>
         <div className='header'>
-        <h2 className='logo'><FontAwesomeIcon icon={faVideo} />  FindYourMovie</h2>
+        <h4 className='logo'><FontAwesomeIcon icon={faVideo} />  FindYourMovie</h4>
 
         <div className={`menu-icon ${isOpen ? 'open' : ''}`}  onClick={toggleMenu}>
-           {isOpen ? <FontAwesomeIcon icon={faXmark} size='8xs'/> : <FontAwesomeIcon icon={faBars} size='8xs'/>}
+           {isOpen ? <FontAwesomeIcon icon={faXmark} size='xl'/> : <FontAwesomeIcon icon={faBars} size='xl'/>}
         </div>
 
         <nav className={`nav-container ${isOpen ? 'open' : ''}`}>
@@ -32,7 +32,7 @@ function Header() {
                 <li> <a href="">About</a></li>
                 <li> <a href="">Company</a></li>
                 <li> <a href="">Docs</a></li>
-                <li id='github'> <a href=""><FontAwesomeIcon icon={faGithub} /></a></li>            
+                <li id='github'> <a href="https://github.com/Jameelah99"><FontAwesomeIcon icon={faGithub} /></a></li>            
             </ul>
         </nav>
         </div>
