@@ -20,7 +20,7 @@ function Header() {
     <>
     <section className='header-container'>
         <div className='header'>
-        <h4 className='logo'><FontAwesomeIcon icon={faVideo} />  FindYourMovie</h4>
+        <h4 className='logo'><FontAwesomeIcon icon={faVideo} size='xm' />  FindYourMovie</h4>
 
         <div className={`menu-icon ${isOpen ? 'open' : ''}`}  onClick={toggleMenu}>
            {isOpen ? <FontAwesomeIcon icon={faXmark} size='xl'/> : <FontAwesomeIcon icon={faBars} size='xl'/>}

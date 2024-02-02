@@ -9,7 +9,7 @@ function Footer() {
     <>
     <section className='footer-container'>
         <div className='footer'>
-           <h4 className='logo'> <FontAwesomeIcon icon={faVideo} />  FindYourMovie</h4>
+           <h4 className='logo'> <FontAwesomeIcon icon={faVideo} size='xm' />  FindYourMovie</h4>
 
            <p className='copyright'> Copyright 2023 - Rotimi Jemilat. All rights reserved.</p>
 

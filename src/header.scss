@@ -55,12 +55,12 @@ $bgColor: black;
         .header{
            display: flex;
            justify-content: space-between;
-           margin:0 2rem;
+           margin:0 .6rem;
 
     
            .logo{
             color: $primaryColor;
-            font-size: 17px;
+            font-size: 13px;
            }
     
            .menu-icon{
